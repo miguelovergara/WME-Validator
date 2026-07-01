@@ -1,0 +1,98 @@
+id,title,problem,severity,enabled,reportOnly,params
+23,Unconfirmed road,Each segment must minimally have the Country and State information,N,true,false,
+24,Might be incorrect city name (only available in the report),The segment might have incorrect city name,W,true,true,
+25,Unknown direction of drivable road,"'Unknown' road direction will not prevent routing on the road",W,true,false,
+27,City name on Railroad,City name on the Railroad may cause a city smudge,N,false,false,
+28,Street name on two-way Ramp,"If Ramp is unnamed, the name of a subsequent road will propagate backwards",W,true,false,
+29,Street name on roundabout,"In Waze, we do not name roundabout segments",W,true,false,
+34,Empty alternate street,Alternate street name is empty,N,true,false,
+35,Unterminated drivable road,Waze will not route from the unterminated segment,W,true,false,
+36,Node A: Unneeded (slow),Adjacent segments at node A are identical,N,false,false,
+37,Node B: Unneeded (slow),Adjacent segments at node B are identical,N,false,false,
+38,Expired segment restriction (slow),The segment has an expired restriction,N,true,false,
+39,Expired turn restriction (slow),The segment has a turn with an expired restriction,N,true,false,
+41,Node A: Reverse connectivity of drivable road,There is a turn which goes against the directionality of the segment at node A,N,true,false,
+42,Node B: Reverse connectivity of drivable road,There is a turn which goes against the directionality of the segment at node B,N,true,false,
+43,Self connectivity,The segment is connected back to itself,E,true,false,
+44,No outward connectivity,The drivable segment has no single outward turn enabled,E,false,false,
+45,No inward connectivity,The drivable non-private segment has no single inward turn enabled,E,false,false,
+46,Node A: No inward connectivity of drivable road (slow),The drivable non-private segment has no single inward turn enabled at node A,W,true,false,
+47,Node B: No inward connectivity of drivable road (slow),The drivable non-private segment has no single inward turn enabled at node B,W,true,false,
+48,Two-way drivable roundabout segment,The drivable roundabout segment is bidirectional,E,true,false,
+50,No connectivity on roundabout (slow),The drivable roundabout segment has no connectivity with adjacent roundabout segment,E,false,false,
+52,Too long street name,The name of the drivable segment is more than ${n} letters long and it is not a Ramp,N,false,false,n=30 | n.title={number} maximum street name length
+54,No city on segment with HNs,Address search will fail with no city name,W,false,false,
+55,No city on named segment,Address search will fail with no city name,N,false,false,
+57,City name on named Ramp,City name on the named Ramp may affect search results,W,false,false,
+59,City name on Freeway,City name on the Freeway may cause a city smudge,N,false,false,
+69,No city name on Freeway,The Freeway has no city name set,N,false,false,
+73,Too short street name,The street name is less than ${n} letters long and it is not a highway,N,false,false,n=3 | n.title={number} minimum street name length
+74,Node A: Multiple segments connected at roundabout,The drivable roundabout node A has more than one segment connected,W,false,false,
+77,Dead-end U-turn,The drivable dead-end road has a U-turn enabled,W,false,false,
+78,Same endpoints (2 segment loop),Two drivable segments share the same two endpoints,W,true,false,
+79,Too short U-turn connector (slow),The length of the segment is less than 15m long so U-turn is not possible here,W,false,false,
+87,Node A: Multiple outgoing segments at roundabout,The drivable roundabout node A has more than one outgoing segment connected,E,true,false,
+90,Two-way Freeway segment,"Most of the Freeways are split into two one-way roads, so this two-way segment might be a mistake",W,false,false,
+91,Two-way Ramp segment,"Most of the Ramps are one-way roads, so this two-way segment might be a mistake",W,false,false,
+95,Street name with a dot,There is a dot in the street name (excluding Ramps),W,false,false,
+99,U-turn at roundabout entrance (slow),The roundabout entrance segment has a U-turn enabled,W,true,false,
+101,Closed road (only available in the report),The segment is marked as closed,E,true,true,"regexp=/(^|\\b)closed(\\b|$)/i | regexp.title={string} regular expression to match closed road"
+102,Node A: No outward connectivity of drivable road (slow),The drivable segment has no single outward turn enabled at node A,W,true,false,
+103,Node B: No outward connectivity of drivable road (slow),The drivable segment has no single outward turn enabled at node B,W,true,false,
+104,Railroad used for comments,The Railroad segment is probably used as a map comment,N,true,false,
+105,Walking Trail instead of a Railroad,The Walking Trail segment with elevation -5 is probably used instead of a Railroad,N,false,false,
+106,No state name selected,The segment has no state name selected,N,false,false,
+107,Node A: No connection (slow),The node A of the drivable segment is within 5m from another drivable segment but not connected by a junction,E,true,false,
+108,Node B: No connection (slow),The node B of the drivable segment is within 5m from another drivable segment but not connected by a junction,E,true,false,
+109,Too short segment,The drivable non-terminal segment is less than ${n}m long so it is hard to see it on the map and it can cause routing problems,W,true,false,n=5 | n.title={number} minimum segment length
+110,Incorrect Freeway elevation,The elevation of the Freeway segment is not a ground,N,false,false,
+112,Too long Ramp name,The Ramp name is more than ${n} letters long,W,true,false,n=55 | n.title={number} maximum Ramp name length
+114,Node A: Non-drivable connected to drivable (slow),The non-drivable segment makes a junction with a drivable at node A,W,false,false,
+115,Node B: Non-drivable connected to drivable (slow),The non-drivable segment makes a junction with a drivable at node B,W,false,false,
+116,Out of range elevation,The segment elevation is out of range,W,true,false,
+117,Obsolete CONST ZN marker,The segment is marked with obsolete CONST ZN suffix,W,true,false,
+118,Node A: Overlapping segments (slow),The segment is overlapping with the adjacent segment at node A,E,true,false,
+119,Node B: Overlapping segments (slow),The segment is overlapping with the adjacent segment at node B,E,true,false,
+120,Node A: Too sharp turn (slow),The drivable segment has a very acute turn at node A,W,true,false,
+121,Node B: Too sharp turn (slow),The drivable segment has a very acute turn at node B,W,true,false,
+128,User-defined custom check (green),Some of the segment properties matched against the user-defined regular expression (see Settings→Custom),1,true,false,
+129,User-defined custom check (blue),Some of the segment properties matched against the user-defined regular expression (see Settings→Custom),2,true,false,
+169,Incorrectly named street,"The street named incorrectly, illegal chars or words used",W,false,false,"regexp=!/^[a-zA-Z0-9\\. :""'(/)-]+$/ | regexp.title={string} regular expression to match incorrect street name"
+170,Lowercase street name,The street name starts with a lowercase word,W,false,false,regexp=/^[a-zа-яёіїєґ]/ | regexp.title={string} regular expression to match a lowercase name
+171,Incorrectly abbreviated street name,The street name has incorrect abbreviation,W,false,false,regexp=/\\.$/ | regexp.title={string} regular expression to match incorrect abbreviations
+172,Unneeded spaces in street name,Leading/trailing/double space in the street name,N,true,false,regexp=/^\\s|\\s$|\\s\\s/
+173,No space before/after street abbreviation,"No space before ('1943r.') or after ('st.Jan') an abbreviation in the street name",W,true,false,"regexp=/([^\\s]\\.[^\\s0-9-][^\\s0-9\\.])|([0-9][^\\s0-9]+\\.[^0-9-])/"
+174,Street name spelling mistake,There is a spelling mistake in the street name,W,false,false,"regexp=/(^|\\b)(accross|cemetary|fourty|foward|goverment|independant|liason|pavillion|portugese|posession|prefered|shcool|wat|wich)($|\\b)/i | regexp.title={string} regular expression to match spelling mistakes"
+175,Empty street name,The street name has only space characters or a dot,W,true,false,regexp=/^[\\s\\.]*$/
+190,Lowercase city name,The city name starts with a lowercase letter,W,true,false,regexp=/^[a-zа-яёіїєґ]/ | regexp.title={string} regular expression to match a lowercase city name
+191,Incorrectly abbreviated city name,The city name has incorrect abbreviation,W,false,false,regexp=/\\./ | regexp.title={string} regular expression to match incorrect abbreviations
+192,Unneeded spaces in city name,Leading/trailing/double space in the city name,N,true,false,regexp=/^\\s|\\s$|\\s\\s/
+193,No space before/after city abbreviation,"No space before ('1943r.') or after ('st.Jan') an abbreviation in the city name",N,true,false,"regexp=/([^\\s]\\.[^\\s0-9-][^\\s0-9\\.])|([0-9][^\\s0-9]+\\.[^0-9-])/"
+200,Node A: Unconfirmed turn on minor road,The minor drivable segment has an unconfirmed (soft) turn at node A,N,true,false,
+201,Node A: Unconfirmed turn on primary road,The primary segment has an unconfirmed (soft) turn at node A,W,true,false,
+202,BETA: No public connection for public segment (slow),The public segment is not connected to any other public segment,W,true,false,
+210,Segment has unverified speed limits from A to B,Segment has speed limit set from A to B that is unverified,N,true,false,
+211,Segment has unverified speed limits from B to A,Segment has speed limit set from B to A that is unverified,N,true,false,
+212,Segment has no speed limit set from A to B,Segment has no speed limit set from A to B,N,true,false,
+213,Segment has no speed limit set from B to A,Segment has no speed limit set from B to A,N,true,false,
+214,Segment has possibly wrong speed limit from A to B,Segment has a speed limit that seems to be incorrect,N,true,false,regexp=/^.+[05]$/ | regexp.title={string} regular expression to match valid speed limits
+215,Segment has possibly wrong speed limit from B to A,Segment has a speed limit that seems to be incorrect,N,true,false,regexp=/^.+[05]$/ | regexp.title={string} regular expression to match valid speed limits
+250,BETA: No city name on Place,The Place has no city name set,N,true,false,regexp=/^(NATURAL_FEATURES|BRIDGE|ISLAND|FOREST_GROVE|SEA_LAKE_POOL|RIVER_STREAM|CANAL|DAM|TUNNEL|JUNCTION_INTERCHANGE)$/ | regexp.title={string} regular expression for categories to exclude from this check
+251,BETA: No street name on Place,The Place has no street name set,N,true,false,regexp=/^(NATURAL_FEATURES|BRIDGE|ISLAND|FOREST_GROVE|SEA_LAKE_POOL|RIVER_STREAM|CANAL|DAM|TUNNEL|JUNCTION_INTERCHANGE)$/ | regexp.title={string} regular expression to match categories that should be excepted from this check
+252,BETA: Automatically updated Place,The Place was updated automatically by Waze,N,true,false,"regexp=/^waze-maint|^105774162$|^waze3rdparty$|^361008095$|^WazeParking1$|^338475699$|^admin$|^-1$|^avsus$|^107668852$/i | regexp.title={string} regular expression to match Waze bot names and ids"
+253,"BETA: Category 'OTHER' should not be used","Users can search on category, and category 'OTHER' doesn't give enough information",N,true,false,
+254,BETA: No entry/exit points on Place,The Place entry/exit points are not set,N,true,false,
+255,BETA: Invalid phone number,The Place has an invalid phone number,N,true,false,regexp=/.+/ | regexp.title={string} regular expression to match a correct phone number
+256,BETA: Invalid website,The Place has an invalid website URL,N,true,false,"regexp=/^(https?://)?[^\\s/$.?#].[^\\s]*$/i | regexp.title={string} regular expression to match a correct website URL"
+257,"BETA: Place should be an area place","The Place is set as a point place, but should be an area",N,true,false,"regexp=/^(GAS_STATION|PARKING_LOT|AIRPORT|...)$/ | regexp.title={string} regular expression to match categories that should be an area"
+258,"BETA: Place should be a point place","The Place is set as an area place, but should be a point",N,true,false,regexp=/^(GARAGE_AUTOMOTIVE_SHOP|...)$/ | regexp.title={string} regular expression to match categories that should be a point
+259,"BETA: No lock on Place","According to the category, the Place should be locked at least to Lvl ${n}",N,true,false,"n=2 | n.title={number} minimum lock level | regexp=/^(PARKING_LOT|CHARGING_STATION)$/ | regexp.title={string} regular expression to match categories that should be locked to {number}"
+260,"BETA: No lock on Place","According to the category, the Place should be locked at least to Lvl ${n}",N,true,false,"n=3 | n.title={number} minimum lock level | regexp=/(GAS_STATION|AIRPORT)/ | regexp.title={string} regular expression to match categories that should be locked to {number}"
+270,BETA: No type on Parking Lot,The primary Parking Lot type is not set,N,true,false,
+271,BETA: No cost on Parking Lot,The Parking Lot cost is not set,N,true,false,
+272,BETA: No payment types on Parking Lot,The Parking Lot payment types are not set,N,true,false,
+273,BETA: No elevation on Parking Lot,The Parking Lot elevation is not set,N,true,false,
+274,BETA: No Parking Lot entry/exit points,The Parking Lot entry/exit points are not set,N,true,false,
+275,BETA: No brand on Gas Station,The Gas Station brand is not in its name,N,true,false,
+300,Node B: Unconfirmed turn on minor road,The minor drivable segment has an unconfirmed (soft) turn at node B,N,true,false,
+301,Node B: Unconfirmed turn on primary road,The primary segment has an unconfirmed (soft) turn at node B,W,true,false,

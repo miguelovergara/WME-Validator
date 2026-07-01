@@ -27,6 +27,18 @@ Configuration (compiler path, output dirs) is in `./00.config.sh`. The Closure C
 
 There are **no automated tests**. Validation is done manually per `doc/RELENG.md`.
 
+## Rule Reference CSVs
+
+Three CSV files in the repo root document the available validation rules:
+
+| File | Contents |
+|------|---------|
+| `rules.csv` | All rules from `i18n/default.js` — id, title, problem, severity, enabled, reportOnly, params |
+| `rules_ES.csv` | All rules visible to Spanish-speaking countries (ES.js + default.js fallback) — includes `in_default` and `default_enabled` columns |
+| `rules_CL.csv` | All rules visible to Chile (CL.js → ES.js → default.js inheritance chain) — includes per-source `enabled` values and `commented()` markers for rules declared but commented out in CL.js |
+
+Severity values: `E` = Error, `W` = Warning, `N` = Note (default), `1` = Custom green, `2` = Custom blue.
+
 ## Architecture
 
 ### Build Pipeline

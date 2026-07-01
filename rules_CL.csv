@@ -1,0 +1,121 @@
+id,title,problem,severity,effective_enabled,reportOnly,params,in_default,default_enabled,in_ES,ES_enabled,in_CL,CL_enabled
+1,WME Toolbox: Rotonda que puede causar problemas,Los números de identificación de los puntos de unión de los segmentos de la rotonda no son consecutivos,N,false,false,,false,-,true,-,false,-
+2,WME Toolbox: Segmento Simple,El segmento tiene nodos de geometría innecesarios,N,false,false,,false,-,true,-,false,-
+3,WME Toolbox: Bloqueo nivel 2,El segmento está resaltado por WME Toolbox. No es un problema,N,false,false,,false,-,true,-,false,-
+4,WME Toolbox: Bloqueo nivel 3,El segmento está resaltado por WME Toolbox. No es un problema,N,false,false,,false,-,true,-,false,-
+5,WME Toolbox: Bloqueo nivel 4,El segmento está resaltado por WME Toolbox. No es un problema,N,false,false,,false,-,true,-,false,-
+6,WME Toolbox: Bloqueo nivel 5,El segmento está resaltado por WME Toolbox. No es un problema,N,false,false,,false,-,true,-,false,-
+7,WME Toolbox: Bloqueo nivel 6,El segmento está resaltado por WME Toolbox. No es un problema,N,false,false,,false,-,true,-,false,-
+8,WME Toolbox: Numeros de casas,El segmento está resaltado por WME Toolbox. No es un problema,N,false,false,,false,-,true,-,false,-
+9,WME Toolbox: Segmento con restricciones de tiempo,El segmento está resaltado por WME Toolbox. No es un problema,N,false,false,,false,-,true,-,false,-
+13,WME Colour Highlights: Bloqueo de editor,El segmento está resaltado por WME Colour Highlights. No es un problema,N,false,false,,false,-,true,-,false,-
+14,WME Colour Highlights: Peaje / Vía de sentido único,El segmento está resaltado por WME Colour Highlights. No es un problema,N,false,false,,false,-,true,-,false,-
+15,WME Colour Highlights: Editado recientemente,El segmento está resaltado por WME Colour Highlights. No es un problema,N,false,false,,false,-,true,-,false,-
+16,WME Colour Highlights: Rango de vías,El segmento está resaltado por WME Colour Highlights. No es un problema,N,false,false,,false,-,true,-,false,-
+17,WME Colour Highlights: Sin ciudad,El segmento está resaltado por WME Colour Highlights. No es un problema,N,false,false,,false,-,true,-,false,-
+18,WME Colour Highlights: Restricción horaria / Tipo de vía resaltado,El segmento está resaltado por WME Colour Highlights. No es un problema,N,false,false,,false,-,true,-,false,-
+19,WME Colour Highlights: Sin nombre,El segmento está resaltado por WME Colour Highlights. No es un problema,N,false,false,,false,-,true,-,false,-
+20,WME Colour Highlights: Filtro por ciudad,El segmento está resaltado por WME Colour Highlights. No es un problema,N,false,false,,false,-,true,-,false,-
+21,WME Colour Highlights: Filtro por ciudad (alt. ciudad),El segmento está resaltado por WME Colour Highlights. No es un problema,N,false,false,,false,-,true,-,false,-
+22,WME Colour Highlights: Filtro por editor,El segmento está resaltado por WME Colour Highlights. No es un problema,N,false,false,,false,-,true,-,false,-
+23,Segmento no confirmado,Cada segmento debe tener al menos el nombre del país o estado,N,true,false,,true,true,true,-,false,-
+24,Puede haber nombre incorrecto de ciudad (sólo disponible en el informe),El segmento puede tener un nombre de ciudad incorrecto,W,true,true,,true,true,true,-,false,-
+25,Dirección del segmento marcada como desconocida,La dirección del segmento 'Desconocida' no impedirá enrutar por la vía,W,true,false,,true,true,true,-,false,-
+27,Nombre de ciudad en vía férrea,Poner nombres de ciudad en la vía férrea puede generar ciudades manchadas,N,true,false,,true,false,true,true,false,-
+28,Nombre de calle en una rampa bidireccional,Si la rampa no tiene nombre el nombre del segmento siguiente se propagará hacia atrás,W,true,false,,true,true,true,-,false,-
+29,Nombre de calle en rotonda,En Waze no nombramos los segmentos de las rotondas,W,true,false,,true,true,true,-,false,-
+34,Nombre de calle alternativo vacío,El nombre de calle alternativo está vacío,N,true,false,,true,true,true,-,false,-
+35,Segmento de vía sin terminar,Waze no enrutará desde un segmento sin terminar,W,true,false,,true,true,true,-,false,-
+36,Punto de unión A innecesario (slow),Los segmentos adyacentes al punto de unión A son idénticos,N,false,false,,true,false,true,-,false,-
+37,Punto de unión B innecesario (slow),Los segmentos adyacentes al punto de unión B son idénticos,N,false,false,,true,false,true,-,false,-
+38,Restricción de segmento caducada (slow),El segmento tiene una restricción caducada,N,true,false,,true,true,true,-,false,-
+39,Restricción de giro caducada (slow),El segmento tiene un giro con una restricción caducada,N,true,false,,true,true,true,-,false,-
+41,Conectividad inversa en punto de unión A del segmento,Hay un giro que va contra la dirección del segmento en el punto de unión A del segmento,N,true,false,,true,true,true,-,false,-
+42,Conectividad inversa en punto de unión B del segmento,Hay un giro que va contra la dirección del segmento en el punto de unión B del segmento,N,true,false,,true,true,true,-,false,-
+43,Auto conectividad,El segmento está conectado a si mismo,E,true,false,,true,true,true,-,false,-
+44,Sin conexión de salida,El segmento no tiene ningún giro de salida permitido,E,false,false,,true,false,true,-,false,-
+45,Sin conexión de entrada,El segmento no privado no tiene ningún giro de entrada permitido,E,false,false,,true,false,true,-,false,-
+46,Sin entrada en A (slow),El segmento no-privado no tiene ningún giro de entrada habilitado en el punto de unión A,W,true,false,,true,true,true,-,false,-
+47,Sin entrada en B (slow),El segmento no-privado no tiene ningún giro de entrada habilitado en el punto de unión B,W,true,false,,true,true,true,-,false,-
+48,Segmento de rotonda bidireccional,El segmento de rotonda es bidireccional,E,true,false,,true,true,true,-,false,-
+50,No hay conectividad en la rotonda (slow),El segmento de la rotonda no tiene conectividad con el segmento de rotonda siguiente,E,false,false,,true,false,true,-,false,-
+52,Too long street name,The name of the drivable segment is more than ${n} letters long and it is not a Ramp,N,false,false,n=30 | n.title={number} maximum street name length,true,false,false,-,false,-
+54,No city on segment with HNs,Address search will fail with no city name,W,false,false,,true,false,false,-,false,-
+55,No city on named segment,Address search will fail with no city name,N,false,false,,true,false,false,-,false,-
+57,Nombre de ciudad en rampa con nombre,Poner el nombre de ciudad en las rampas puede afectar a los resultados de búsqueda,W,true,false,,true,false,true,true,false,-
+59,Nombre de Ciudad en Autopista,Poner nombres de ciudad en la Autopista puede generar ciudades manchadas,N,true,false,,true,false,true,true,false,commented(true)
+69,No city name on Freeway,The Freeway has no city name set,N,false,false,,true,false,false,-,false,-
+73,Menos de 3 caracteres de longitud en el nombre de la calle,El nombre de la calle tiene una longitud de menos de 3 caracteres,N,true,false,n=3 | n.title={number} minimum street name length,true,false,true,true,false,-
+74,Varios segmentos en el punto de unión A de la rotonda,La rotonda tiene en el punto de unión A más de un segmento conectado,W,false,false,,true,false,true,-,false,-
+77,Calle sin salida con giro en U,La calle sin salida tiene un giro en U habilitado,W,false,false,,true,false,true,-,false,-
+78,Segmentos con los mismos puntos de inicio y final (slow),Dos segmentos comparten los puntos de inicio y final,W,true,false,,true,true,true,-,false,-
+79,Conector para giros en U demasiado corto (slow),La longitud del segmento es menor de 15 metros por lo que el giro en U no es posible,W,false,false,,true,false,true,-,false,-
+87,Más de un segmento de salida en el punto de unión A de la rotonda,La rotonda tiene en el punto de unión A más de un segmento de salida conectado,E,true,false,,true,true,true,-,false,-
+90,Segmento de Autopista bidireccional,La mayoría de las Autopistas están separadas en dos vías de un sentido por lo que este segmento bidireccional puede ser un error,W,true,false,,true,false,true,true,false,-
+91,Two-way Ramp segment,"Most of the Ramps are one-way roads, so this two-way segment might be a mistake",W,false,false,,true,false,false,-,false,-
+95,Street name with a dot,There is a dot in the street name (excluding Ramps),W,false,false,,true,false,false,-,false,-
+99,Giro en U en la entrada de rotonda (slow),El segmento de entrada a la rotonda tiene un giro en U habilitado,W,true,false,,true,true,true,-,false,-
+101,Zona en construcción (sólo disponible en el informe),El segmento está marcado como zona de construcción,E,false,true,"regexp=/(^|\\b)closed(\\b|$)/i | regexp.title={string} regular expression to match closed road",true,true,true,false,false,-
+102,Sin salida en A (slow),El segmento no tiene ningún giro de salida habilitado en el punto de unión A,W,true,false,,true,true,true,-,false,-
+103,Sin salida en B (slow),El segmento no tiene ningún giro de salida habilitado en el punto de unión B,W,true,false,,true,true,true,-,false,-
+104,Vía férrea usada para comentarios,El segmento de vía férrea es probablemente usado como comentario de mapa,N,true,false,,true,true,true,-,false,-
+105,Walking Trail instead of a Railroad,The Walking Trail segment with elevation -5 is probably used instead of a Railroad,N,false,false,,true,false,false,-,false,-
+106,No state name selected,The segment has no state name selected,N,false,false,,true,false,false,-,false,-
+107,Sin conexión en punto de unión A (slow),El punto de unión A del segmento está a menos de 5 metros de otro segmento pero no está conectado,E,true,false,,true,true,true,-,false,-
+108,Sin conexión en punto de unión B (slow),El punto de unión B del segmento está a menos de 5 metros de otro segmento pero no está conectado,E,true,false,,true,true,true,-,false,-
+109,Segmento muy corto,El segmento tiene menos de 2 metros de longitud así que es difícil de ver en el mapa,W,true,false,n=5 | n.title={number} minimum segment length,true,true,true,-,false,-
+110,Incorrect Freeway elevation,The elevation of the Freeway segment is not a ground,N,false,false,,true,false,false,-,false,-
+112,Más de 55 caracteres en el nombre de la Rampa,El nombre de la Rampa tiene más de 55 caracteres,W,true,false,n=55 | n.title={number} maximum Ramp name length,true,true,true,-,false,-
+114,No transitable conectada a transitable en el punto de unión A (slow),El segmento no transitable tiene un punto de unión con un segmento transitable en el extremo A,W,false,false,,true,false,true,false,false,-
+115,No transitable conectada a transitable en el punto de unión B (slow),El segmento no transitable tiene un punto de unión con un segmento transitable en el extremo B,W,false,false,,true,false,true,false,false,-
+116,Elevación fuera de rango,La elevación del segmento está fuera de rango,W,true,false,,true,true,true,-,false,-
+117,Marcado obsoleto: CONST ZN,El segmento está marcado con el sufijo obsoleto CONST ZN,W,false,false,,true,true,true,false,false,-
+118,Segmentos superpuestos en A (slow),El segmento se solapa con el segmento adyacente en el punto de unión A,E,true,false,,true,true,true,-,false,-
+119,Segmentos superpuestos en B (slow),El segmento se solapa con el segmento adyacente en el punto de unión B,E,true,false,,true,true,true,-,false,-
+120,Giro demasiado cerrado en A (slow),El segmento tiene un giro demasiado cerrado en el punto de unión A,W,true,false,,true,true,true,-,false,-
+121,Giro demasiado cerrado en B (slow),El segmento tiene un giro demasiado cerrado en el punto de unión B,W,true,false,,true,true,true,-,false,-
+128,Comprobación personalizada por el usuario 1,Alguna de las propiedades del segmento coinciden con la expresión regular definida por el usuario (ver Ajustes→Personalización),1,true,false,,true,true,true,-,false,-
+129,Comprobación personalizada por el usuario 2,Alguna de las propiedades del segmento coinciden con la expresión regular definida por el usuario (ver Ajustes→Personalización),2,true,false,,true,true,true,-,false,-
+130,Nivel de bloqueo de Autopista incorrecto,El segmento de Autopista no está bloqueado a nivel 4,N,true,false,"titleEN=No lock on Freeway | problemEN=The Freeway segment should be locked to Lvl 4 | solutionEN=Lock the segment | template=${type}:${lock} | regexp=/^3:[^4]/",false,-,true,true,false,-
+131,No lock on Major Highway,The Major Highway segment should be locked to Lvl 3,N,true,false,"titleEN=No lock on Major Highway | problemEN=The Major Highway segment should be locked to Lvl 3 | solutionEN=Lock the segment | template=${type}:${lock}:${street} | regexp=/^6:[^3]:N\\-/",false,-,true,true,false,-
+133,No lock on Ramp,The Ramp segment should be locked to Lvl 3,N,true,false,"titleEN=No lock on Ramp | problemEN=The Ramp segment should be locked to Lvl 3 | solutionEN=Lock the segment | template=${type}:${lock} | regexp=/^4:[^3]/",false,-,true,true,false,-
+150,Nivel de bloqueo de Autopista incorrecto,El segmento de Autopista no está bloqueado a nivel ${n},N,false,false,,false,-,true,-,false,commented(true)
+169,Calle nombrada incorrectamente,"La calle tiene el nombre incorrecto, usando caracteres o palabras ilegales",W,false,false,"regexp=!/^[a-zA-Z0-9\\. :""'(/)-]+$/ | regexp.title={string} regular expression to match incorrect street name",true,false,true,-,false,-
+170,Nombre de calle comienza con minúscula,El nombre de la calle comienza con minúscula,W,true,false,regexp=/^[a-zа-яёіїєґ]/ | regexp.title={string} regular expression to match a lowercase name,true,false,true,true,false,commented(true)
+171,Incorrectly abbreviated street name,The street name has incorrect abbreviation,W,false,false,regexp=/\\.$/ | regexp.title={string} regular expression to match incorrect abbreviations,true,false,false,-,false,-
+172,Nombre de calle con espacios innecesarios,Espacio en blanco inicial/final o doble en el nombre de la calle,N,true,false,regexp=/^\\s|\\s$|\\s\\s/,true,true,true,-,false,-
+173,Nombre de segmento sin espacio antes o después de una abreviación,"Sin espacio antes ('1943r.') o después ('St.Jan') de una abreviación en el nombre del segmento",W,false,false,"regexp=/([^\\s]\\.[^\\s0-9-][^\\s0-9\\.])|([0-9][^\\s0-9]+\\.[^0-9-])/",true,true,true,false,false,-
+174,Street name spelling mistake,There is a spelling mistake in the street name,W,false,false,"regexp=/(^|\\b)(accross|cemetary|fourty|foward|goverment|independant|liason|pavillion|portugese|posession|prefered|shcool|wat|wich)($|\\b)/i | regexp.title={string} regular expression to match spelling mistakes",true,false,false,-,false,-
+175,Nombre del segmento sólo con espacios,El nombre del segmento sólo tiene espacios en blanco en el nombre,W,true,false,regexp=/^[\\s\\.]*$/,true,true,true,-,false,-
+190,Nombre de ciudad con minúscula,El nombre de la ciudad comienza con minúscula,W,true,false,regexp=/^[a-zа-яёіїєґ]/ | regexp.title={string} regular expression to match a lowercase city name,true,true,true,-,false,-
+191,Incorrectly abbreviated city name,The city name has incorrect abbreviation,W,false,false,regexp=/\\./ | regexp.title={string} regular expression to match incorrect abbreviations,true,false,false,-,false,-
+192,Nombre de Ciudad con espacios innecesarios,Espacio en blanco inicial/final o doble en el nombre de la ciudad,N,true,false,regexp=/^\\s|\\s$|\\s\\s/,true,true,true,-,false,-
+193,Nombre de Ciudad sin espacio delante o atrás de una abreviación,"Sin espacio antes ('1943r.') o después ('St.Jean') de una abreviación en el nombre de la ciudad",N,false,false,"regexp=/([^\\s]\\.[^\\s0-9-][^\\s0-9\\.])|([0-9][^\\s0-9]+\\.[^0-9-])/",true,true,true,false,false,-
+200,Unión A: Giro suave (implícito) en segmento,El segmento tiene un giro no confirmado,N,true,false,,true,true,true,-,false,commented(false)
+201,Unión A: Giro suave (implícito) en segmento principal,El segmento principal tiene un giro no confirmado,W,true,false,,true,true,true,-,false,-
+202,BETA: No public connection for public segment (slow),The public segment is not connected to any other public segment,W,true,false,,true,true,false,-,false,-
+210,Segment has unverified speed limits from A to B,Segment has speed limit set from A to B that is unverified,N,true,false,,true,true,false,-,false,-
+211,Segment has unverified speed limits from B to A,Segment has speed limit set from B to A that is unverified,N,true,false,,true,true,false,-,false,-
+212,Segment has no speed limit set from A to B,Segment has no speed limit set from A to B,N,true,false,,true,true,false,-,false,-
+213,Segment has no speed limit set from B to A,Segment has no speed limit set from B to A,N,true,false,,true,true,false,-,false,-
+214,Segment has possibly wrong speed limit from A to B,Segment has a speed limit that seems to be incorrect,N,true,false,regexp=/^.+[05]$/ | regexp.title={string} regular expression to match valid speed limits,true,true,false,-,false,-
+215,Segment has possibly wrong speed limit from B to A,Segment has a speed limit that seems to be incorrect,N,true,false,regexp=/^.+[05]$/ | regexp.title={string} regular expression to match valid speed limits,true,true,false,-,false,-
+250,BETA: No city name on Place,The Place has no city name set,N,true,false,regexp=/^(NATURAL_FEATURES|BRIDGE|ISLAND|FOREST_GROVE|SEA_LAKE_POOL|RIVER_STREAM|CANAL|DAM|TUNNEL|JUNCTION_INTERCHANGE)$/ | regexp.title={string} regular expression for categories to exclude from this check,true,true,false,-,false,-
+251,BETA: No street name on Place,The Place has no street name set,N,true,false,regexp=/^(NATURAL_FEATURES|BRIDGE|ISLAND|FOREST_GROVE|SEA_LAKE_POOL|RIVER_STREAM|CANAL|DAM|TUNNEL|JUNCTION_INTERCHANGE)$/ | regexp.title={string} regular expression to match categories that should be excepted from this check,true,true,false,-,false,-
+252,BETA: Automatically updated Place,The Place was updated automatically by Waze,N,true,false,"regexp=/^waze-maint|^105774162$|^waze3rdparty$|^361008095$|^WazeParking1$|^338475699$|^admin$|^-1$|^avsus$|^107668852$/i | regexp.title={string} regular expression to match Waze bot names and ids",true,true,false,-,false,-
+253,"BETA: Category 'OTHER' should not be used","Users can search on category, and category 'OTHER' doesn't give enough information",N,true,false,,true,true,false,-,false,-
+254,BETA: No entry/exit points on Place,The Place entry/exit points are not set,N,true,false,,true,true,false,-,false,-
+255,BETA: Invalid phone number,The Place has an invalid phone number,N,true,false,regexp=/.+/ | regexp.title={string} regular expression to match a correct phone number,true,true,false,-,false,-
+256,BETA: Invalid website,The Place has an invalid website URL,N,true,false,"regexp=/^(https?://)?[^\\s/$.?#].[^\\s]*$/i | regexp.title={string} regular expression to match a correct website URL",true,true,false,-,false,-
+257,"BETA: Place should be an area place","The Place is set as a point place, but should be an area",N,true,false,"regexp=/^(GAS_STATION|PARKING_LOT|AIRPORT|...)$/ | regexp.title={string} regular expression to match categories that should be an area",true,true,false,-,false,-
+258,"BETA: Place should be a point place","The Place is set as an area place, but should be a point",N,true,false,regexp=/^(GARAGE_AUTOMOTIVE_SHOP|...)$/ | regexp.title={string} regular expression to match categories that should be a point,true,true,false,-,false,-
+259,"BETA: No lock on Place","According to the category, the Place should be locked at least to Lvl ${n}",N,true,false,"n=2 | n.title={number} minimum lock level | regexp=/^(PARKING_LOT|CHARGING_STATION)$/ | regexp.title={string} regular expression to match categories that should be locked to {number}",true,true,false,-,false,-
+260,"BETA: No lock on Place","According to the category, the Place should be locked at least to Lvl ${n}",N,true,false,"n=3 | n.title={number} minimum lock level | regexp=/(GAS_STATION|AIRPORT)/ | regexp.title={string} regular expression to match categories that should be locked to {number}",true,true,false,-,false,-
+270,BETA: No type on Parking Lot,The primary Parking Lot type is not set,N,true,false,,true,true,false,-,false,-
+271,BETA: No cost on Parking Lot,The Parking Lot cost is not set,N,true,false,,true,true,false,-,false,-
+272,BETA: No payment types on Parking Lot,The Parking Lot payment types are not set,N,true,false,,true,true,false,-,false,-
+273,BETA: No elevation on Parking Lot,The Parking Lot elevation is not set,N,true,false,,true,true,false,-,false,-
+274,BETA: No Parking Lot entry/exit points,The Parking Lot entry/exit points are not set,N,true,false,,true,true,false,-,false,-
+275,BETA: No brand on Gas Station,The Gas Station brand is not in its name,N,true,false,,true,true,false,-,false,-
+300,Node B: Unconfirmed turn on minor road,The minor drivable segment has an unconfirmed (soft) turn at node B,N,true,false,,true,true,false,-,false,-
+301,Node B: Unconfirmed turn on primary road,The primary segment has an unconfirmed (soft) turn at node B,W,true,false,,true,true,false,-,false,-
